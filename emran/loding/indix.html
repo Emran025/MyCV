@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .loader-container {
+        margin: 2% 0%;
+        width: 100%;
+        height: 25px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .loader-part0, .loader-part1, .loader-part2, .loader-part3 {
+        position: absolute;
+        border-radius: 50px;
+        width: 17%;
+        height: 100%;
+    }
+    
+    .loader-part0 {
+        animation: progress-0 2s linear infinite;
+    }
+
+    .loader-part1 {
+        animation: progress-1 2s linear infinite;
+    }
+
+    .loader-part2 {
+        animation: progress-2 2s linear infinite;
+    }
+    
+    .loader-part3 {
+        animation: progress-3 2s linear infinite;
+    }
+    
+    @keyframes progress-0 {
+      0% { left: -100%; }
+      100% { left: 0%; }
+    }
+    
+    @keyframes progress-1 {
+      0% { left: 0%; }
+      100% { left: 100%; }
+    }
+
+    @keyframes progress-2 {
+      0% { left: 100%; }
+      100% { left: 0%; }
+    }
+    
+    @keyframes progress-3 {
+      0% { left: 0%; }
+      100% { left: -100%; }
+    }
+
+    .part0, .part7 {
+        margin-left: 85%;
+        background-color: #eeff00;
+     }
+    .part1, .part6 {
+        width: 47%;
+        margin-left: 36%;
+        background-color: #000000;
+     }
+    .part2, .part5 {
+        margin-left: 17%;
+        background-color: #ff0000;
+     }
+    .part3, .part4 {
+        margin-left: -2%;
+        background-color: #eeff00;
+     } 
+</style>
+
+
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader-part0 part0"></div>
+    <div class="loader-part0 part1"></div>
+    <div class="loader-part0 part2"></div>
+    <div class="loader-part0 part3"></div>
+    <div class="loader-part1 part0"></div>
+    <div class="loader-part1 part1"></div>
+    <div class="loader-part1 part2"></div>
+    <div class="loader-part1 part3"></div>
+  </div>
+  <div class="loader-container">
+    <div class="loader-part2 part7"></div>
+    <div class="loader-part2 part6"></div>
+    <div class="loader-part2 part5"></div>
+    <div class="loader-part2 part4"></div>
+    <div class="loader-part3 part7"></div>
+    <div class="loader-part3 part6"></div>
+    <div class="loader-part3 part5"></div>
+    <div class="loader-part3 part4"></div>
+  </div>
+  <div class="loader-container">
+    <div class="loader-part0 part0"></div>
+    <div class="loader-part0 part1"></div>
+    <div class="loader-part0 part2"></div>
+    <div class="loader-part0 part3"></div>
+    <div class="loader-part1 part0"></div>
+    <div class="loader-part1 part1"></div>
+    <div class="loader-part1 part2"></div>
+    <div class="loader-part1 part3"></div>
+  </div>
+  <div class="loader-container">
+    <div class="loader-part2 part7"></div>
+    <div class="loader-part2 part6"></div>
+    <div class="loader-part2 part5"></div>
+    <div class="loader-part2 part4"></div>
+    <div class="loader-part3 part7"></div>
+    <div class="loader-part3 part6"></div>
+    <div class="loader-part3 part5"></div>
+    <div class="loader-part3 part4"></div>
+  </div>
+  <div class="loader-container">
+    <div class="loader-part0 part0"></div>
+    <div class="loader-part0 part1"></div>
+    <div class="loader-part0 part2"></div>
+    <div class="loader-part0 part3"></div>
+    <div class="loader-part1 part0"></div>
+    <div class="loader-part1 part1"></div>
+    <div class="loader-part1 part2"></div>
+    <div class="loader-part1 part3"></div>
+  </div>
+  <div class="loader-container">
+    <div class="loader-part2 part7"></div>
+    <div class="loader-part2 part6"></div>
+    <div class="loader-part2 part5"></div>
+    <div class="loader-part2 part4"></div>
+    <div class="loader-part3 part7"></div>
+    <div class="loader-part3 part6"></div>
+    <div class="loader-part3 part5"></div>
+    <div class="loader-part3 part4"></div>
+  </div>
+</body>
+</html>  

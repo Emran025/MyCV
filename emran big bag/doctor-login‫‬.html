@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>موقع حجز مواعيد الأطباء</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script>
+    // استيراد المكتبة المطلوبة
+    import { MDBFileReader } from 'mdbreact';
+    
+    // استدعاء دالة لجلب البيانات من ملف الاكسس
+    getData();
+    
+    function getData() {
+      // إنشاء قارئ لملف الاكسس
+      var reader = new MDBFileReader();
+    
+      // تحميل ملف الاكسس
+      reader.loadFile('doctors.accdb', function() { // استبدال doctors.accdb بالاسم الصحيح لملف الاكسس
+        // استخراج البيانات من ملف الاكسس
+        var data = reader.getTableData('me');
+    
+        if (data.length > 0) {
+          var doctorData = data[0];
+    
+          // تحديث العناصر في الصفحة
+          updateHTML(doctorData);
+        }
+      });
+    }
+    
+    function updateHTML(doctorData) {
+      var imgElement = document.querySelector('.me1');
+      var nameElement = document.querySelector('.me2');
+      var specializationElement = document.querySelector('.me3');
+      var clinicElement = document.querySelector('.me4');
+      var phoneElement = document.querySelector('.me5');
+    
+      imgElement.src = doctorData.me1; // استبدال me1 بالعمود الصحيح في جدول البيانات
+      nameElement.textContent = doctorData.me2; // استبدال me2 بالعمود الصحيح في جدول البيانات
+      specializationElement.textContent = 'التخصص: ' + doctorData.me3; // استبدال me3 بالعمود الصحيح في جدول البيانات
+      clinicElement.textContent = 'العيادة: ' + doctorData.me4; // استبدال me4 بالعمود الصحيح في جدول البيانات
+      phoneElement.textContent = 'رقم الهاتف: ' + doctorData.me5; // استبدال me5 بالعمود الصحيح في جدول البيانات
+    }
+</script>
+</head>
+<body>
+  <header>
+    <div class="hi-and-search-bar">
+      <h1>احجز موعدك مع طبيبك الان</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="ابحث عن الطبيب">
+        <button>بحث</button>
+      </div>
+    </div>
+    <nav>
+      <a href="search-doctor.html">بحث عن الطبيب</a>
+      <a href="search-area.html">بحث عن المنطقة</a>
+      <a href="doctor-login.html">تسجيل الدخول كطبيب</a>
+    </nav>
+  </header>
+
+  <section id="slider">
+    <div class="slide">
+      <div class="doctor-info">
+        <div class="doctor-info1">
+          <img class="me1" src="photos/emran.jpg" alt="صورة الطبيب">
+          <div class="doctor-details">
+            <h2 class="me2">دكتور أحمد</h2>
+            <p class="me3">التخصص: طب الأعصاب</p>
+            <p class="me4" >العيادة: المستشفى العام</p>
+            <p class="me5" >رقم الهاتف: 0123456789</p>
+          </div>
+        </div>
+        <div>
+          <p class="Abaut-Me">العيادة: المستشفى العام</p>
+        </div>
+      </div>
+    </div>
+    <!-- يمكنك إضافة المزيد من السلايدات هنا -->
+  </section>
+
+  <footer>
+    <p>موقع العيادة: شارع الطبيب، المدينة، الدولة</p>
+    <p>رقم الهاتف: 0123456789</p>
+  </footer>
+</body>
+</html>
