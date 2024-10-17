@@ -6,7 +6,7 @@
         - [**PDF**](PDF/MY_CV_EN.pdf)
 
     - #### CV iN ARABIC:
-        - [**HTML PAGE**](index_ِArabic.html)
+        - [**HTML PAGE**](index_Arabic.html)
         - [**PDF**](PDF/MY_CV_AR.pdf)
 
 <div dir="rtl">
