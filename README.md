@@ -2,19 +2,23 @@
 
 - ### This file contains :
     - #### CV iN ENGLISH:
-        - **HTML PAGE**
-        - **PDF**
+        - [**HTML PAGE**](index.html)
+        - [**PDF**](PDF/MY_CV_EN.pdf)
 
     - #### CV iN ARABIC:
-        - **HTML PAGE**
-        - **PDF**
+        - [**HTML PAGE**](index_ِArabic.html)
+        - [**PDF**](PDF/MY_CV_AR.pdf)
+
+<div dir="rtl">
 
 ## السيرة الذاتية لعمران ناصر غالب محمد ناصر
 - ### يحتوي هذا الملف على :
     - #### السيرة الذاتية باللغة الإنجليزية:
-        - **صفحة html**
-        - **PDF**
+        - [**صفحة html**](index.html)
+        - [**PDF**](PDF/MY_CV_EN.pdf)
 
     - #### السيرة الذاتية باللغة العربية:
-        - **صفحة html**
-        - **PDF**
+        - [**صفحة html**](index_ِArabic.html)
+        - [**PDF**](PDF/MY_CV_AR.pdf)
+        
+</div>
