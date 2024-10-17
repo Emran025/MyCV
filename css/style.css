@@ -29,7 +29,7 @@ min-height: 100%;
 
 body{
   margin:  0 ;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Cairo' , sans-serif;
 	font-size: 100%;
 	background: #ffffff;
   min-height: 100vh;
@@ -37,6 +37,12 @@ body{
 
   flex-direction: column ;
 }
+
+@font-face {
+  font-family: 'Cairo';
+  src: url(../fonts/Cairo/Cairo-VariableFont_slnt,wght.ttf);
+}
+
 body a{
 	transition:1s all;
 	-webkit-transition:1s all;
@@ -57,12 +63,13 @@ header{
   /* border-left: 10px solid #000; */
   /* margin-left: 20px; */
   background-color: #191919;
-  display: grid ;
-  grid-template-columns:1fr 1fr ;
+  display: flex ;
+
 }
 .personal{
-  margin: 0%  -30%  -20%  0% ;
-  padding: 6% 0% 0% 5%;
+  margin: 0%  0% 0%  5% ;
+  width: 100%;
+  /* padding: 2% 0% 0% 5%; */
   align-items: center;
   Text-align: center;
 }
@@ -71,23 +78,26 @@ header{
 header h1 {
   font-size: 30px;
   color: #ffffff;
-
+  Text-align: center;
   margin-top: 5%;
   margin-bottom: 5%;
+  width: 100%;
 }
 
 header .personalh2 {
-  
+  Text-align: center;
   color: #ffffff;
   margin-top: -2%;
   margin-bottom: -2%;
   font-size: 15px;
+  width: 100%;
 }
 
 .social-media-imges{
   justify-content: center;
   color: #ffffff;
   display: flex;
+  width: 100%;
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -99,12 +109,16 @@ header .personalh2 {
 }
 
 .my-photo{
-  margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
-  margin-left: 35%;
-  width: 50%;
+  margin-left: 5%;
+  width: 35%;
+  /* align-items: center;
+  align-self: center;
+  align-content: center;
+  align-tracks: center;
+  justify-content: center; */
   border-radius:  50% 50% 50% 50% ;
 	/* width:90%; */
 }
@@ -520,7 +534,6 @@ a {
   }
   
   .content{
-    font-family: 'Ubuntu', sans-serif;
     font-size: 100%;
     background: #ffffff;
     margin: 20px;; 
